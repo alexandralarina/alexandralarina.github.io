@@ -1,0 +1,148 @@
+.container-body {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.vert-grad {
+	background: linear-gradient(#ffffff, #999794);
+	width: 100%;
+	margin: 0 auto;
+}
+
+.btn-lg {
+	color: #000000;
+}
+
+header {
+	margin: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+body {
+	font-family: 'AvenirNext-Regular';
+	font-weight: 300;
+	font-size: 15px;
+	text-align: center;
+}
+
+@font-face {
+	src: url('AvenirNext-Regular.woff');
+	font-family: 'AvenirNext-Regular';
+	font-weight: 300;
+}
+
+
+.btn btn-default {
+	color: #646865;
+}
+
+.position-absolute {
+	width: 100%;
+	text-align: center;
+	padding: 15px; 
+
+	justify-content: space-between;
+}
+
+.display: inline-block; {
+padding: #667984;
+}
+
+.blockquote {
+	background: #646865;
+	position:fixed;
+	width: 500px;
+	color: #ffffff;
+}
+
+.skachet {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+}
+
+.skachet li {
+  min-width: 150px;
+  text-align: center;
+  border: .5em solid #646865;
+}
+
+.skachet li:hover {
+  border: .5em, solid #000000;
+}
+
+.skachet a:hover {
+  color: white;
+}
+
+footer {
+	
+	background: #C2C2C1;
+	color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrapper-buttons a {
+	font-size: 18px;
+	text-align: #ffffff;
+}
+
+.wrapper-buttons button {
+	margin: 20px;
+	background: #C2C2C1;
+}
+
+.wrapper-buttons a:hover {
+	text-decoration: none;
+}
+
+.hovergallery img{
+
+-webkit-transform:scale(0.8); /*Webkit: уменьшаем размер до 0.8*/
+
+-moz-transform:scale(0.8); /*Mozilla: масштабирование*/
+
+-o-transform:scale(0.8); /*Opera: масштабирование*/
+
+-webkit-transition-duration: 0.5s; /*Webkit: длительность анимации*/
+
+-moz-transition-duration: 0.5s; /*Mozilla: длительность анимации*/
+
+-o-transition-duration: 0.5s; /*Opera: длительность анимации*/
+
+opacity: 0.7; /*Начальная прозрачность изображений*/
+
+margin: 0 10px 5px 0; /*Интервалы между изображениями*/
+
+max-height: 778px;
+
+}
+ 
+.hovergallery img:hover{
+
+-webkit-transform:scale(1.1); /*Webkit: увеличиваем размер до 1.2x*/
+
+-moz-transform:scale(1.1); /*Mozilla: масштабирование*/
+
+-o-transform:scale(1.1); /*Opera: масштабирование*/
+
+box-shadow:0px 0px 30px gray; /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
+
+-webkit-box-shadow:0px 0px 30px gray; /*Webkit: тени*/
+
+-moz-box-shadow:0px 0px 30px gray; /*Mozilla: тени*/
+
+opacity: 1;
+}
+
+.h1-gallery{
+	text-align: center;
+}
+
+a {
+	color: #000000;
+}
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dynamic Drive CSS Library- CSS3 Hover Image Gallery</title>
+<meta charset='UTF-8'>
+
+<style type="text/css">
+
+.hovergallery img{
+-webkit-transform:scale(0.8); /*Webkit: Scale down image to 0.8x original size*/
+-moz-transform:scale(0.8); /*Mozilla scale version*/
+-o-transform:scale(0.8); /*Opera scale version*/
+-webkit-transition-duration: 0.5s; /*Webkit: Animation duration*/
+-moz-transition-duration: 0.5s; /*Mozilla duration version*/
+-o-transition-duration: 0.5s; /*Opera duration version*/
+opacity: 0.7; /*initial opacity of images*/
+margin: 0 10px 5px 0; /*margin between images*/
+}
+
+.hovergallery img:hover{
+-webkit-transform:scale(1.1); /*Webkit: Scale up image to 1.2x original size*/
+-moz-transform:scale(1.1); /*Mozilla scale version*/
+-o-transform:scale(1.1); /*Opera scale version*/
+box-shadow:0px 0px 30px gray; /*CSS3 shadow: 30px blurred shadow all around image*/
+-webkit-box-shadow:0px 0px 30px gray; /*Safari shadow version*/
+-moz-box-shadow:0px 0px 30px gray; /*Mozilla shadow version*/
+opacity: 1;
+}
+
+.maincontainer { width: 70%; margin: 80px auto; }
+
+</style>
+</head>
+
+<body>
+
+
+<div class="maincontainer">
+
+<h3>CSS3 галерея с эффектом зума</h3>
+
+<!-- CSS Example-->
+
+<p>Простая и изящная гелерея изображений может быть получена с использованием анимации CSS3, теней и свойства "<code>transform</code>".
+ При наведении курсора мыши изображение будет увеличиваться и надвагаться на пользователя.</p>
+
+<p>Код отлично работает в Chrome, Safari 4+, Opera 9.5+, FF 4+. В IE анимации не поддерживаются, поэтому эффект веден не полностью.</p>
+
+<div class="hovergallery">
+<img src="img/coconut.jpg">
+<img src="img/sunbreakthrough.jpg">
+<img src="img/desert.jpg">
+<img src="img/sunflower.jpg">
+<img src="img/forest.jpg">
+<img src="img/duck.jpg">
+</div>
+
+<h3>CSS:</h3>
+
+<pre>&lt;style type="text/css"&gt;
+
+.hovergallery img{
+-webkit-transform:scale(0.8); /*Webkit: уменьшаем размер до 0.8*/
+-moz-transform:scale(0.8); /*Mozilla: масштабирование*/
+-o-transform:scale(0.8); /*Opera: масштабирование*/
+-webkit-transition-duration: 0.5s; /*Webkit: длительность анимации*/
+-moz-transition-duration: 0.5s; /*Mozilla: длительность анимации*/
+-o-transition-duration: 0.5s; /*Opera: длительность анимации*/
+opacity: 0.7; /*Начальная прозрачность изображений*/
+margin: 0 10px 5px 0; /*Интервалы между изображениями*/
+}
+
+.hovergallery img:hover{
+-webkit-transform:scale(1.1); /*Webkit: увеличиваем размер до 1.2x*/
+-moz-transform:scale(1.1); /*Mozilla: масштабирование*/
+-o-transform:scale(1.1); /*Opera: масштабирование*/
+box-shadow:0px 0px 30px gray; /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
+-webkit-box-shadow:0px 0px 30px gray; /*Webkit: тени*/
+-moz-box-shadow:0px 0px 30px gray; /*Mozilla: тени*/
+opacity: 1;
+}
+
+&lt;/style&gt;
+</pre>
+
+<h3>HTML:</h3>
+<pre>&lt;div class="hovergallery"&gt;
+	&lt;img src="coconut.jpg" /&gt;
+	&lt;img src="sunbreakthrough.jpg" /&gt;
+	&lt;img src="desert.jpg" /&gt;
+	&lt;img src="sunflower.jpg" /&gt;
+	&lt;img src="forest.jpg" /&gt;
+	&lt;img src="duck.jpg" /&gt;
+&lt;/div&gt;
+</pre>
+
+
+
+
+
+
+
+
+</div>
+
+</body></html>
